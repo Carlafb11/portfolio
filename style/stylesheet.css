@@ -104,9 +104,12 @@ section {
   color: #3F3D56;
 }
 
-.CTA {
+.CTAwrapper {
   margin-top: 30px;
-  padding: 5px 10px;
+}
+
+.CTA {
+  padding: 5px 30px;
   border: 1px solid #FEBAAF;
   background-color: #FEBAAF;
   border-radius: 20px;
@@ -117,7 +120,6 @@ section {
 }
 
 .CTA:hover {
-  margin-top: 30px;
   padding: 5px 10px;
   border: 1px solid #FEBAAF;
   background-color: #fff;
@@ -162,6 +164,7 @@ section {
   display: flex;
   width: 70%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card1 {
@@ -189,7 +192,7 @@ section {
 }
 
 .titleCard1, .titleCard2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 600;
   color: #3F3D56;
   text-align: center;
@@ -225,6 +228,7 @@ section {
 
 #proyectos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -233,7 +237,8 @@ section {
 .wrapperProyectos {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1050px;
+  justify-content: space-between;
+  max-width: 1000px;
 }
 
 
@@ -253,9 +258,6 @@ section {
 }
 
 .card2:hover  {
-  width: calc(100% / 3 - (0.75em * 3));
-  height: 300px;
-  background-color: #fff;
   border: 1px solid #FEBAAF;
   border-radius: 15px;
   margin: 15px;
@@ -349,7 +351,7 @@ ul {
 .formCopy {
   color: #3F3D56;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 15px 0;
   display: flex;
 }
 
@@ -388,7 +390,7 @@ textarea:focus, input:focus{
 
 .submitCTA {
   margin-top: 30px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   border: 1px solid #3F3D56;
   background-color: #3F3D56;
   border-radius: 20px;
@@ -465,4 +467,101 @@ textarea:focus, input:focus{
 
 footer {
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  section {
+    padding: 80px 30px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sectionHeight {
+    height: auto;
+  }
+
+  .imgMain {
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .CTA {
+    width: 45%;
+  }
+
+  .subtitleHeader {
+    font-size: 1.3em;
+  }
+
+  .textCenter {
+    width: 85%;
+  }
+
+  .card1 {
+    width: 100%;
+  }
+
+  .cardSection1 {
+    flex-wrap: nowrap;
+  }
+
+  .wrapperProyectos {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .card2 {
+    width: 90%;
+  }
+
+  .card2 img {
+    max-height: 110px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contactColumn {
+    width: 100%;
+  }
+
+  .contactColumn:first-of-type {
+    padding: 0;
+  }
+
+  .contactColumn:last-of-type {
+    padding: 15% 0 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .formCopy {
+    margin: 15px 0;
+  }
+
+  .navFooter {
+    display: none;
+  }
+
+  footer, .paddingTB {
+    padding: 20px 0 60px 0;
+  }
+
+  .submitCTA {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  header {
+    visibility: hidden;
+  }
 }
