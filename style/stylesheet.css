@@ -500,12 +500,8 @@ footer {
     width: 85%;
   }
 
-  .card1 {
-    width: 100%;
-  }
-
   .cardSection1 {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .wrapperProyectos {
@@ -513,8 +509,12 @@ footer {
     align-content: center;
   }
 
+  .card1 {
+    width: 100%;
+  }
+
   .card2 {
-    width: 90%;
+    width: 90% !important;
   }
 
   .card2 img {
@@ -524,6 +524,7 @@ footer {
   .contact {
     display: flex;
     flex-direction: column;
+    padding: 30px;
   }
 
   .contactColumn {
@@ -556,6 +557,41 @@ footer {
 
   .submitCTA {
     width: 50%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sectionHeight {
+    height: auto;
+  }
+
+  .imgMain {
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .cardSection1 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cardSection1 {
+    width: 80%;
+  }
+
+  .wrapperProyectos {
+    max-width: 700px;
+    justify-content: space-between;
+  }
+
+  .card2 {
+    width: 45%;
   }
 
 }
