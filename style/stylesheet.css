@@ -5,6 +5,15 @@
   transition: 0.3s;
 }
 
+.boxShadow {
+  box-shadow: inset -6px 0px 9px -1px rgba(135,135,135,1);
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  position: fixed;
+  z-index: 9999;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -19,7 +28,7 @@
   padding: 0 10%;
   box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 .navMenu {
@@ -43,6 +52,10 @@ a {
   margin: 0 10px;
   color: #ff6851;
   cursor: pointer;
+}
+
+.navItem:active {
+  border-bottom: 1px solid #FEBAAF;
 }
 
 .selectedButton {
@@ -115,18 +128,16 @@ section {
   border-radius: 20px;
   color: #fff;
   cursor: pointer;
-  width: 35%;
+  /* width: 35%; */
   text-align: center;
 }
 
 .CTA:hover {
-  padding: 5px 10px;
   border: 1px solid #FEBAAF;
   background-color: #fff;
   border-radius: 20px;
   color: #FEBAAF;
   cursor: pointer;
-  width: 35%;
 }
 
 .imgMain {
@@ -339,6 +350,11 @@ section {
   margin: 15px 0;
 }
 
+
+.iconWrapper:active .copy {
+  border-bottom: 1px solid #FEBAAF;
+}
+
 ul {
   padding: 0;
 }
@@ -429,6 +445,10 @@ textarea:focus, input:focus{
   margin: 0 10px;
   color: #ff9686;
   cursor: pointer;
+}
+
+.navItemFooter:active {
+  border-bottom: 1px solid #FEBAAF;
 }
 
 .iconWrapperFooter {
