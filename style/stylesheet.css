@@ -55,8 +55,9 @@ a {
   cursor: pointer;
 }
 
-.navItem:focus, button:focus, .iconWrapper:focus {
+.navItem:focus, button:focus, .iconWrapper:focus, .navItemFooter:focus, .iconWrapperFooter:focus {
   outline-color: #ff6851;
+  transition: none;
 }
 
 
@@ -409,7 +410,7 @@ textarea {
 }
 
 textarea:focus, input:focus{
-  outline: none;
+  outline-color: #ff6851;
 }
 
 .submitCTA {
