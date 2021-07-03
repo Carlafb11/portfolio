@@ -55,6 +55,11 @@ a {
   cursor: pointer;
 }
 
+.navItem:focus, button:focus, .iconWrapper:focus {
+  outline-color: #ff6851;
+}
+
+
 .navItem:active {
   border-bottom: 1px solid #FEBAAF;
 }
@@ -276,6 +281,11 @@ section {
 .card2:hover .titleCard2, .card1:hover .titleCard1 {
   color: #FEBAAF;
   transition: none;
+}
+
+.card2:focus, .card1:focus {
+  outline: none;
+  border-color: #ff6851;
 }
 
 
