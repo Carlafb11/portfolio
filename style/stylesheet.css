@@ -194,9 +194,6 @@ section {
 }
 
 .card1:hover {
-  width: 28%;
-  height: 200px;
-  background-color: #fff;
   border: 1px solid #FEBAAF;
   border-radius: 15px;
   margin: 15px;
@@ -276,7 +273,7 @@ section {
   cursor: pointer;
 }
 
-.card2:hover .titleCard2 {
+.card2:hover .titleCard2, .card1:hover .titleCard1 {
   color: #FEBAAF;
   transition: none;
 }
